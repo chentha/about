@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins,sans-serif;
+        }
+        body{
+            background-color: rgb(16, 16, 16);
+            max-width: 100%;
+            height: auto;
+            margin: auto 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container1{
+            max-width: 1600px;
+            width: 100%;
+            height: auto;
+        }
+        .box_resume{
+            text-align: center;
+            margin-top: 65px;
+        }
+        .box_resume span{
+            font-size: 95px;
+            font-weight: 800;
+            color: hsla(0,0%,100%,.07);
+            letter-spacing: 10px;
+            line-height: .7;
+        }
+        .box_resume span h1{
+            font-size: 48px;
+            margin-top: -55px;
+            font-weight: 800;
+            letter-spacing: normal;
+            color: #ededed;
+        }
+        .box_resume span h1 span{
+            font-size: 48px;
+            margin-top: -55px;
+            font-weight: 800;
+            color:#FFB400;
+            letter-spacing: normal;
+        }
+        
+        .box_personal{
+            margin-top: 90px;
+            margin-left: 90px;
+            float: left;
+        }
+        .box_personal h1{
+            font-size: 27px;
+            color: #FFFFFF;
+        }
+        .box_personal .b1 ul{
+            list-style: none;
+            float: left;
+        }
+        .box_personal .b1 ul li{
+            color:hsl(0, 5%, 67%);
+        }
+        .box_personal .b1 ul li span{
+            letter-spacing: normal;
+        }
+        .box_personal .b1 ul li{
+            padding-top: 28px;
+        }
+        .box_personal .b2 ul{
+            list-style: none;
+        }
+        .box_personal .b2 ul li{
+            padding-top: 28px;
+            padding-left: 290px;
+            color:hsl(0, 5%, 67%);
+        }
+        .box_personal .b2 ul li span{
+            letter-spacing: normal;
+            
+        }
+        
+        .box_personal button span{
+            font-weight: 700;
+            font-size: 15px;
+            padding-right: 20px;
+            color: aliceblue;
+        }
+        .box_personal .btn1{
+            position: relative;
+            margin-top: 23px;
+            width: 240px;
+            height: 58px;
+            border-radius: 30px;
+            border: 2px solid #FFB400;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box_personal button .fa-download{
+            width: 56px;
+            height: 56px;
+            font-size: 20px;
+            border-radius: 90px;
+            background-color: #FFB400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: -43px;
+        }
+        
+        .box_Ability .c1{
+            border: 1px solid hsla(0,0%,100%,.07);
+            width: 270px;
+            height: 150px;
+            float: left;
+            margin-left: 60px;
+            margin-top: 100px;
+            padding: 20px;
+            padding-left: 40px;
+        }
+        .box_Ability .c1 h1{
+            color: #FFB400;
+            font-size: 45px;
+        }
+        .box_Ability .c1 hr{
+            width: 30px;
+            
+        }
+        .box_Ability .c1 h2{
+            padding-left: 60px;
+            margin-top: -12PX;
+            font-size: 12px;
+            line-height: 23px;
+            letter-spacing: 2px;
+            color: #ededed;
+        }
+        .box_Ability .c1 hr{
+            margin-top: 10px;
+            margin-left: 5px;
+            width: 37px;
+        }
+        
+        .box_Ability .c2{
+            border: 1px solid hsla(0,0%,100%,.07);
+            width: 270px;
+            height: 150px;
+            float:left;
+            display: flex;
+            margin-left: 60px;
+            margin-top: 40px;
+            padding: 20px;
+            padding-left: 40px;
+        }
+        .box_Ability .c2 h1{
+            color: #FFB400;
+            font-size: 45px;
+        }
+        .box_Ability .c2 hr{
+            width: 30px;
+        }
+        .box_Ability .c2 h2{
+            padding-left: 10px;
+            margin-top: 60PX;
+            font-size: 12px;
+            line-height: 23px;
+            letter-spacing: 2px;
+            color: #ededed;
+        }
+        .box_Ability .c2 hr{
+            margin-top: 10px;
+            margin-left: 5px;
+            width: 37px;
+        }
+        
+        .box_icon{
+            margin-top: 100px;
+            position: fixed;
+            right: 30px;
+        }
+        .box_icon .fa{
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            margin-top: 17px;
+        }
+        .box_icon .fa-house{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 90px;
+            background-color: #2b2a2a;
+            transition: 0.4s;
+        }
+        .box_icon .fa-house:hover{
+            background-color: #FFB400;
+            transition: 0.4s;
+        }
+        .box_icon .fa-user{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 90px;
+            background-color: #2b2a2a;
+            transition: 0.4s;
+        }
+        .box_icon .fa-user:hover{
+            background-color: #FFB400;
+            transition: 0.4s;
+        }
+        .box_icon .fa-briefcase{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 90px;
+            background-color: #2b2a2a;
+            transition: 0.4s;
+        }
+        .box_icon .fa-briefcase:hover{
+            background-color: #FFB400;
+            transition: 0.4s;
+        }
+        .box_icon .fa-envelope-open{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 90px;
+            background-color: #2b2a2a;
+            transition: 0.4s;
+        }
+        .box_icon .fa-envelope-open:hover{
+            background-color: #FFB400;
+            transition: 0.4s;
+        }
+        .box_icon .fa-comments{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 90px;
+            background-color: #2b2a2a;
+            transition: 0.4s;
+        }
+        .box_icon .fa-comments:hover{
+            background-color: #FFB400;
+            transition: 0.4s;
+        }
+        .box_icon ul li{
+            list-style: none;
+        }
+        .fa-circle-half-stroke{
+            color: aliceblue;
+            width: 50px;
+            height: 50px;
+            border-radius: 90px;
+            background-color: #2b2a2a;
+            padding: 13.5px;
+            font-size: 22px;
+            position: fixed;
+            right: 30px;
+            top: 40px;
+        }
+        .fa-moon{
+            color: aliceblue;
+            width: 50px;
+            height: 50px;
+            border-radius: 90px;
+            background-color: #2b2a2a;
+            padding: 13.5px;
+            font-size: 22px;
+            position: fixed;
+            right: 30px;
+            top: 40px;
+        }
+        
+        .box_myskill{
+            margin-top: 550px;
+            color: #FFFFFF;
+        }
+        .box_myskill h1{
+            text-align: center;
+            color: #FFFFFF;
+        }
+        
+        .container{
+            float: left;
+            display: flex;
+            width: 320px;
+            padding: 50px 0;
+            border-radius: 8px;
+            row-gap: 30px;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 20px;
+        }
+        /*----html----*/
+        .circular-progress{
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background: conic-gradient(#FFB400 240deg, #ededed 240deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circular-progress::before{
+            content: "";
+            position: absolute;
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            background-color:#2b2a2a;
+        }
+        .progress-value{
+            position: relative;
+            font-size: 40px;
+            font-weight: 600;
+            color: #FFB400;
+        }
+        .text{
+            font-size: 30px;
+            font-weight: 500;
+            color: #606060;
+        }
+        .text1{
+            font-size: 30px;
+            font-weight: 500;
+            color: #606060;
+        }
+        .text2{
+            font-size: 30px;
+            font-weight: 500;
+            color: #606060;
+        }
+        .text3{
+            font-size: 30px;
+            font-weight: 500;
+            color: #606060;
+        }
+        .text4{
+            font-size: 30px;
+            font-weight: 500;
+            color: #606060;
+        }
+        .text5{
+            font-size: 30px;
+            font-weight: 500;
+            color: #606060;
+        }
+        /*----css----*/
+        .circular-progress1{
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background: conic-gradient(#FFB400 260deg, #ededed 260deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circular-progress1::before{
+            content: "";
+            position: absolute;
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            background-color:#2b2a2a;
+        }
+        .progress-value1{
+            position: relative;
+            font-size: 40px;
+            font-weight: 600;
+            color: #FFB400;
+        }
+        /*----js----*/
+        .circular-progress2{
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background: conic-gradient(#FFB400 180deg, #ededed 180deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circular-progress2::before{
+            content: "";
+            position: absolute;
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            background-color:#2b2a2a;
+        }
+        .progress-value2{
+            position: relative;
+            font-size: 40px;
+            font-weight: 600;
+            color: #FFB400;
+        }
+        /*----jquery----*/
+        .circular-progress3{
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background: conic-gradient(#FFB400 130deg, #ededed 130deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circular-progress3::before{
+            content: "";
+            position: absolute;
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            background-color:#2b2a2a;
+        }
+        .progress-value3{
+            position: relative;
+            font-size: 40px;
+            font-weight: 600;
+            color: #FFB400;
+        }
+        /*----bs----*/
+        .circular-progress4{
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background: conic-gradient(#FFB400 180deg, #ededed 180deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circular-progress4::before{
+            content: "";
+            position: absolute;
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            background-color:#2b2a2a;
+        }
+        .progress-value4{
+            position: relative;
+            font-size: 40px;
+            font-weight: 600;
+            color: #FFB400;
+        }
+        /*----ux ui----*/
+        .circular-progress5{
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background: conic-gradient(#FFB400 100deg, #ededed 100deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circular-progress5::before{
+            content: "";
+            position: absolute;
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            background-color:#2b2a2a;
+        }
+        .progress-value5{
+            position: relative;
+            font-size: 40px;
+            font-weight: 600;
+            color: #FFB400;
+        }
+        /*experience*/
+        .box_exerience{
+            margin-top: 640px;
+            
+        }
+        .box_exerience h1{
+            text-align: center;
+            color: #ededed;
+            font-size: 27px;
+        }
+        .ex1{
+            width: 35%;
+            height: 120px;
+            margin-left: 130px;
+            margin-top: 70px;
+            float: left;
+            color: #ededed;
+            display: block;
+        }
+        .ex1 .line1{
+            border-left: 1px solid grey;
+            height: 70px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .ex1 .fa-solid{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ededed;
+            width: 40px;
+            height: 40px;
+            border-radius: 90px;
+            background-color: #FFB400;
+        }
+        .ex1 h1{
+            margin-left: 50px;
+            margin-top: -120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            width: 14%;
+            height: 23px;
+            background-color: #606060;
+            border-radius: 50px;
+        }
+        .ex1 p{
+            color: #ededed;
+            font-size: 17px;
+            margin-left: 50px;
+            margin-top: 10px;
+            font-weight: 700;
+        }
+        .ex1 h3{
+            color: #ededed;
+            font-size: 12px;
+            line-height: 24px;
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+        .space{
+            margin-top: 640px;
+        }
+        
+        
+        .b11{
+            display: none;
+        }
+        .b22{
+            display: none;
+        }
+        
+        
+        /*croll up button*/
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            width: 50px;
+            height: 50px;
+            border-radius: 90px;
+            background-color: #2b2a2a;
+          }
+          html{
+            scroll-behavior: smooth;
+          }
+          #myBtn:hover {
+            background-color: #FFB400;
+          }
+        .box_photo1{
+            display: none;
+        }
+        .box_exerience h2{
+            display: none;
+        }
+        
+        /*responsive phone*/
+        @media only screen and ( max-width:600px) {
+            .box_resume{
+                text-align: center;
+                margin-top: 75px;
+                margin-left: -150px;
+            }
+            .box_resume span{
+                font-size: 45px;
+                font-weight: 800;
+                color: hsla(0,0%,100%,.07);
+                letter-spacing: 4px;
+                line-height: .7;
+            }
+            .box_resume span h1{
+                font-size: 30px;
+                margin-top: -30px;
+                font-weight: 800;
+                letter-spacing: normal;
+                color: #ededed;
+            }
+            .box_resume span h1 span{
+                font-size: 30px;
+                margin-top: 25px;
+                font-weight: 800;
+                color:#FFB400;
+                letter-spacing: normal;
+            }
+            .box_photo1 {
+                display: block;
+                margin-top: 50px;
+                margin-left: 70px;
+                width: 235px;
+                height: 235px;
+                border-radius: 200px;
+                border: 1px solid #2b2a2a;;
+            }
+            .box_photo1 img{
+                width: 230px;
+                padding-bottom: 40px;
+                padding-left: 20px;
+            }
+        
+        
+            .box_personal{
+                margin-top: 90px;
+                margin-left:  10px;
+                float: left;
+            }
+            .box_personal .b1{
+                display: none;
+            }
+            .box_personal .b2{
+                display: none;
+            }
+        
+        
+            .box_personal .b11{
+                display: block;
+                color: #606060;
+                float: left;
+                line-height: 30px;
+                margin-left: 15px;
+                margin-top: 20px;
+            }
+            .box_personal .b11 ul{
+                list-style: none;
+            }
+            .box_personal .b11 ul li span{
+                color: #ededed;
+            }
+        
+            .box_personal .b22{
+                display: block;
+                color: #606060;
+                float: left;
+                line-height: 30px;
+                margin-left: 80px;
+                margin-top: 20px;
+            }
+            .box_personal .b22 ul{
+                list-style: none;
+            }
+            .box_personal .b22 ul li span{
+                color: #ededed;
+            }
+        
+        .box_personal #letter{
+            font-size: 20px;
+        }
+            
+        .box_personal button span{
+            font-weight: 700;
+            font-size: 15px;
+            padding-right: 20px;
+            color: aliceblue;
+        }
+        .box_personal .btn1{
+            position: relative;
+            margin-top: 343px;
+            margin-left: 15px;
+            width: 220px;
+            height: 58px;
+            border-radius: 30px;
+            border: 2px solid #FFB400;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box_personal button .fa-download{
+            width: 56px;
+            height: 56px;
+            font-size: 20px;
+            border-radius: 90px;
+            background-color: #FFB400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: -13px;
+        }
+        
+        
+        .box_Ability .c1{
+            border: 1px solid hsla(0,0%,100%,.07);
+            width: 160px;
+            height: 150px;
+            float: left;
+            margin-left: 20px;
+            margin-top: 40px;
+            padding: 20px;
+            padding-left: 40px;
+        }
+        .box_Ability .c1 h1{
+            color: #FFB400;
+            font-size: 38px;
+        }
+        .box_Ability .c1 hr{
+            width: 25px;
+            display: none;
+        }
+        .box_Ability .c1 h2{
+            padding-left: 0px;
+            margin-top: 12PX;
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            color: #ededed;
+        }
+        .box_Ability .c1 hr{
+            margin-top: 10px;
+            margin-left: 5px;
+            width: 37px;
+        }
+        
+        .box_Ability .c2{
+            border: 1px solid hsla(0,0%,100%,.07);
+            width: 160px;
+            height: 150px;
+            float: left;
+            margin-left: 20px;
+            margin-top: 0px;
+            padding: 20px;
+            padding-left: 40px;
+        }
+        .box_Ability .c2 h1{
+            color: #FFB400;
+            font-size: 38px;
+        }
+        .box_Ability .c2 hr{
+            width: 30px;
+            display: none;
+        }
+        .box_Ability .c2 h2{
+            padding-left: -60px;
+            margin-top: PX;
+            margin-left: -50px;
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            color: #ededed;
+        }
+        
+        
+        .box_myskill h1{
+            font-size: 20px;
+            float: left;
+            padding-top: 60px;
+            margin-left: 12px;
+        }
+        
+        
+        
+        .container{
+            float: left;
+            display: flex;
+            width: 320px;
+            padding: 50px 0;
+            border-radius: 8px;
+            row-gap: 30px;
+            flex-direction: column;
+            align-items: center;
+        }
+        /*----html----*/
+        .circular-progress{
+            float: left;
+            margin-left: -160px;
+            position: relative;
+            height: 110px;
+            width: 110px;
+            border-radius: 50%;
+            background: conic-gradient(#FFB400 240deg, #ededed 240deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circular-progress::before{
+            content: "";
+            position: absolute;
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            background-color:#2b2a2a;
+        }
+        .progress-value{
+            position: relative;
+            font-size: 30px;
+            font-weight: 600;
+            color: #FFB400;
+        }
+        .text{
+            font-size: 23px;
+            font-weight: 500;
+            color: #606060;
+            margin-top: -10px;
+            margin-left: -150px;
+        }
+        /*----css----*/
+        .circular-progress1{
+            margin-top: -255px;
+            margin-left: 170px;
+            position: relative;
+            height: 110px;
+            width: 110px;
+            border-radius: 50%;
+            background: conic-gradient(#FFB400 240deg, #ededed 240deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circular-progress1::before{
+            content: "";
+            position: absolute;
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            background-color:#2b2a2a;
+        }
+        .progress-value1{
+            position: relative;
+            font-size: 30px;
+            font-weight: 600;
+            color: #FFB400;
+        }
+        .text1{
+            font-size: 23px;
+            font-weight: 500;
+            color: #606060;
+            margin-top: -12px;
+            margin-left: 168px;
+        }
+        /*----js----*/
+        .circular-progress2{
+            float: left;
+            margin-top: -160px;
+            margin-left: -160px;
+            position: relative;
+            height: 110px;
+            width: 110px;
+            border-radius: 50%;
+            background: conic-gradient(#FFB400 240deg, #ededed 240deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circular-progress2::before{
+            content: "";
+            position: absolute;
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            background-color:#2b2a2a;
+        }
+        .progress-value2{
+            position: relative;
+            font-size: 30px;
+            font-weight: 600;
+            color: #FFB400;
+        }
+        .text2{
+            font-size: 23px;
+            font-weight: 500;
+            color: #606060;
+            margin-top: -10px;
+            margin-left: -150px;
+        }
+        /*----jquery----*/
+        .circular-progress3{
+            margin-top: -255px;
+            margin-left: 170px;
+            position: relative;
+            height: 110px;
+            width: 110px;
+            border-radius: 50%;
+            background: conic-gradient(#FFB400 240deg, #ededed 240deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circular-progress3::before{
+            content: "";
+            position: absolute;
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            background-color:#2b2a2a;
+        }
+        .progress-value3{
+            position: relative;
+            font-size: 30px;
+            font-weight: 600;
+            color: #FFB400;
+        }
+        .text3{
+            font-size: 23px;
+            font-weight: 500;
+            color: #606060;
+            margin-top: -12px;
+            margin-left: 168px;
+        }
+        /*----bs----*/
+        .circular-progress4{
+            float: left;
+            margin-top: -160px;
+            margin-left: -160px;
+            position: relative;
+            height: 110px;
+            width: 110px;
+            border-radius: 50%;
+            background: conic-gradient(#FFB400 240deg, #ededed 240deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circular-progress4::before{
+            content: "";
+            position: absolute;
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            background-color:#2b2a2a;
+        }
+        .progress-value4{
+            position: relative;
+            font-size: 30px;
+            font-weight: 600;
+            color: #FFB400;
+        }
+        .text4{
+            font-size: 23px;
+            font-weight: 500;
+            color: #606060;
+            margin-top: -10px;
+            margin-left: -150px;
+        }
+        /*----ux ui----*/
+        .circular-progress5{
+            margin-top: -255px;
+            margin-left: 170px;
+            position: relative;
+            height: 110px;
+            width: 110px;
+            border-radius: 50%;
+            background: conic-gradient(#FFB400 240deg, #ededed 240deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circular-progress5::before{
+            content: "";
+            position: absolute;
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            background-color:#2b2a2a;
+        }
+        .progress-value5{
+            position: relative;
+            font-size: 30px;
+            font-weight: 600;
+            color: #FFB400;
+        }
+        .text5{
+            font-size: 23px;
+            font-weight: 500;
+            color: #606060;
+            margin-top: -12px;
+            margin-left: 168px;
+        }
+        
+        
+        
+        .box_exerience h1{
+            font-size: 18px;
+            margin-top: 1280px;
+            margin-bottom: 20px;
+            margin-left: -140px;
+        }
+        /*experience*/
+        .ex1{
+            width: 80%;
+            height: 120px;
+            margin-left: 30px;
+            margin-top: 35px;
+            color: #ededed;
+        }
+        .ex1 .line1{
+            border-left: 1px solid grey;
+            height: 70px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .ex1 .fa-solid{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ededed;
+            width: 40px;
+            height: 40px;
+            border-radius: 90px;
+            background-color: #FFB400;
+        }
+        .ex1 h1{
+            margin-left: 50px;
+            margin-top: -120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            width: 23%;
+            height: 23px;
+            background-color: #606060;
+            border-radius: 50px;
+        }
+        .ex1 h2{
+            color: #ededed;
+            font-size: 17px;
+            margin-left: 50px;
+            margin-top: 10px;
+            display: block;
+        }
+        .ex1 h3{
+            color: #ededed;
+            font-size: 12px;
+            line-height: 24px;
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+        .space{
+            margin-top: 930px;
+        }
+        
+        .box_icon{
+            z-index: 1;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2b2a2a;
+            position: fixed;
+        }
+        .box_icon ul li{
+            display: inline-block;
+        }
+        .box_icon .fa{
+            margin-left: 19px;
+            margin-bottom: 15px;
+            width:52px;
+            height:52px;
+            background-color: #444444;
+        }
+        .fa-circle-half-stroke{
+            color: aliceblue;
+            width: 50px;
+            height: 50px;
+            border-radius: 90px;
+            background-color: #2b2a2a;
+            padding: 13.5px;
+            font-size: 22px;
+            position: fixed;
+            right: 15px;
+            top: 40px;
+        }
+        .fa-moon{
+            color: aliceblue;
+            width: 50px;
+            height: 50px;
+            border-radius: 90px;
+            background-color: #2b2a2a;
+            padding: 13.5px;
+            font-size: 22px;
+            position: fixed;
+            right: 15px;
+            top: 40px;
+        }
+        /*croll up button*/
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 100px;
+            right: 10px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            width: 54px;
+            height: 54px;
+            border-radius: 90px;
+            background-color: #2b2a2a;
+          }
+          html{
+            scroll-behavior: smooth;
+          }
+          #myBtn:hover {
+            background-color: #FFB400;
+          }
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-upload"></i></button>
+        <div class="box_icon">
+            <div class="box_icon">
+                <ul>
+                    <li><a href="/index.html"><i class="fa fa-house"></i></a></li>
+                    <li><a href="/about/index1.html"><i class="fa fa-user"></i></a></li>
+                    <li><a href=""><i class="fa fa-briefcase"></i></a></li>
+                    <li><a href="/index3.html"><i class="fa fa-envelope-open"></i></a></li>
+                    <li><a href=""><i class="fa fa-comments"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box_resume">
+            <span>
+                <span >RESUME</span>
+                <h1>ABOUT <span> ME</span></h1>
+            </span>
+        </div>
+     
+        <div class="box_personal">
+            <h1 id="letter">PERSONAL INFOS</h1>
+            <div class="box_photo1">
+                <img src="https://o.remove.bg/downloads/6824f9a6-ecfc-42a8-a35a-9d0b41187bdf/photo_2022-10-13_17-45-25-removebg-preview.png" alt="">
+            </div>
+            <div class="b1">
+                <ul id="span1">
+                    <li>First Name: <span id="span">Hour</span></li>
+                    <li>Age: <span id="span">19 years</span></li>
+                    <li>Freelance: <span id="span"> Available</span></li>
+                    <li>Phone: <span id="span">+885 78818433</span></li>
+                    <li>Skype: <span id="span">Hour.Chentha</span></li>
+                </ul>
+            </div>
+
+            <div class="b2">
+                <ul>
+                    <li>Last Name: <span id="span">Chentha</span></li>
+                    <li>Nationality: <span id="span">Cambodian</span></li>
+                    <li>Address: <span id="span">Phnom Penh</span></li>
+                    <li>Email: <span id="span">hourchentha00@gmail.com</span></li>
+                    <li>Langages: <span id="span">Khmer, English</span></li>
+                </ul>
+            </div>
+
+            <div class="b11">
+                <ul id="span1">
+                    <li>First Name: <span id="span"><br> Hour</span></li>
+                    <li>Age: <span id="span"><br> 19 years</span></li>
+                    <li>Freelance: <span id="span"><br> Available</span></li>
+                    <li>Phone: <span id="span"><br> +885 78818433</span></li>
+                    <li>Skype: <span id="span"><br> Hour.Chentha</span></li>
+                </ul>
+            </div>
+
+            <div class="b22">
+                <ul>
+                    <li>Last Name: <span id="span"><br> Chentha</span></li>
+                    <li>Nationality: <span id="span"><br> Cambodian</span></li>
+                    <li>Address: <span id="span"><br> Phnom Penh</span></li>
+                    <li>Email: <span id="span"><br> hourchentha00@</span></li>
+                    <li>Langages: <span id="span"><br> Khmer, English</span></li>
+                </ul>
+            </div>
+            <button class="btn1"> <span>MORE ABOUT ME</span> <i class="fa-solid fa-download"></i></button>
+        </div>
+
+        <div class="box_Ability">
+            <div class="c1">
+                <h1>
+                    NO
+                    <hr>
+                    <h2>YEARS OF <br>
+                        EXPERIENCE</h2>
+                </h1>
+            </div>
+
+            <div class="c1">
+                <h1>
+                    3<sup>+</sup>
+                    <hr>
+                    <h2>COMPLETED <br>
+                        PROJECTS</h2>
+                </h1>
+            </div>
+
+            <div class="c2">
+                <h1>
+                    8<sup>+</sup>
+                    <hr>
+                    <h2>
+                        HAPPY <br>
+                        CUSTOMERS</h2>
+                </h1>
+            </div>
+
+            <div class="c2">
+                <h1>
+                    2<sup>+</sup>
+                    <hr>
+                    <h2>AWARDS <br>
+                        WON</h2>
+                </h1>
+            </div>
+        </div>
+        <div class="box_myskill">
+            <h1>MY SKILLS</h1>
+            <!--box html-->
+            <div class="container">
+                <div class="circular-progress">
+                    <span class="progress-value">60%</span>
+                </div>
+                <span class="text">HTML</span>
+            </div>
+            <!--box css-->
+            <div class="container">
+                <div class="circular-progress1">
+                    <span class="progress-value1">70%</span>
+                </div>
+                <span class="text1">CSS</span>
+            </div>
+            <!--box js-->
+            <div class="container">
+                <div class="circular-progress2">
+                    <span class="progress-value2">50%</span>
+                </div>
+                <span class="text2">javascript</span>
+            </div>
+            <!--box jquery-->
+            <div class="container">
+                <div class="circular-progress3">
+                    <span class="progress-value3">35%</span>
+                </div>
+                <span class="text3">jquery</span>
+            </div>
+            <!--box bs-->
+            <div class="container">
+                <div class="circular-progress4">
+                    <span class="progress-value4">50%</span>
+                </div>
+                <span class="text4">bootstrap</span>
+            </div>
+            <!--box ux ui-->
+            <div class="container">
+                <div class="circular-progress5">
+                    <span class="progress-value5" >30%</span>
+                </div>
+                <span class="text5">UX / UI</span>
+            </div>
+
+        </div>
+
+        <div class="box_exerience">
+            <h1>EXPERIENCE & EDUCATION</h1>
+            
+            <div class="ex1">
+                <i class="fa-solid fa-briefcase"></i>
+                <div class="line1"></div>
+                <h1>2016-2018</h1>
+                <p>Secondary-Baray</p>
+                <h3>Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit</h3>
+            </div>
+
+            <div class="ex1">
+                <i class="fa-solid fa-briefcase"></i>
+                <div class="line1"></div>
+                <h1>2019-2021</h1>
+                <p>HIGH SCHOOL-Prey Veng</p>
+                <h3>Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit</h3>
+            </div>
+
+            <div class="ex1">
+                <i class="fa-solid fa-briefcase"></i>
+                <div class="line1"></div>
+                <h1>2021-2022</h1>
+                <p>UNIVERSITY-Rupp</p>
+                <h3>Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit</h3>
+            </div>
+
+            <div class="ex1">
+                <i class="fa-solid fa-briefcase"></i>
+                <div class="line1"></div>
+                <h1>2022</h1>
+                <p>ETEC CENTER-PP</p>
+                <h3>Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit</h3>
+            </div>
+
+            <div class="ex1">
+                <i class="fa-solid fa-briefcase"></i>
+                <div class="line1"></div>
+                <h1>2023</h1>
+                <p>UNIVERSITY-Rupp</p>
+                <h3>Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit</h3>
+            </div>
+        </div> 
+        <div class="space"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+        
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
